@@ -1,4 +1,4 @@
-# Website Junior High School 3 Padalarang
+# Junior High School 3 Padalarang Website
 
 ##### Technology :
 1. HTML
