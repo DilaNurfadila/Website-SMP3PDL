@@ -1,4 +1,4 @@
-# Website SMP Negeri 3 Padalarang
+# Website Junior High School 3 Padalarang
 
 ##### Technology :
 1. HTML
@@ -17,4 +17,4 @@
 3. Zhilan Aqshal Rivaldi Ma'ruf
 
 ##### Form :
-#### SMK Negeri 13 Bandung
+#### Vocational High School 13 Bandung
