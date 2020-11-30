@@ -4,8 +4,7 @@
 1. HTML
 2. CSS
 3. Javascript
-4. Bootstrap
-5. Laravel
+4. Laravel
 
 ##### Tools :
 1. Postman
