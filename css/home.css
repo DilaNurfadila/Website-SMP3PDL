@@ -1,0 +1,1024 @@
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End Common */
+
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 66px; */
+    font-size: 18px;
+    background: linear-gradient(180deg, #84B271 45%, rgba(5, 150, 228, 0) 100%);
+    font-family: Roboto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black !important;
+}
+
+nav ul li {
+    /* display: flex; */
+    padding: 23px 48px 23px 48px;
+    /* margin-right: 86px; */
+}
+
+nav ul li:hover {
+    background-color: green;
+}
+
+/* .active {
+    background-color: green;
+} */
+
+/* Menu Hamburger */
+
+.menu-btn__burger {
+    display: none;
+}
+
+/* End Menu Hamburger */
+/* End Navbar */
+
+
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 172px;
+    background: linear-gradient(0deg, #2C5338 72.4%, rgba(0, 106, 163, 0) 100%);
+}
+
+.logo {
+    position: absolute;
+    width: 71px;
+    height: 87px;
+    margin-left: 56px;
+    animation: logorotate 2s infinite;
+}
+
+@keyframes logorotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logo-des {
+    font-size: 16px;
+    font-family: 'Staatliches', cursive;
+    margin-left: 138px;
+    color: white;
+}
+
+.date-time {
+    font-family: Roboto;
+    margin-right: 25px;
+    color: #bbb;
+}
+
+.date {
+    font-size: 36px;
+}
+
+#days::after {
+    content: ",";
+}
+
+#dates::after, #months::after {
+    content: " -";
+}
+
+.time {
+    font-size: 64px;
+}
+
+#hours::after, #minutes::after {
+    content: " :";
+}
+
+.date, .time {
+    text-align: center;
+}
+/* End Header Section */
+
+/* Hero Image */
+.hero-img {
+    width: 100%;
+    height: 400px;
+}
+/* End Hero Image */
+
+/* Sambutan */
+.title, .sambutan {
+    font-family: Roboto;
+}
+
+.sambutan {
+    display: grid;
+    grid-template-areas: "sambutan sambutan"
+    "img content"
+    "img headmaster";
+    row-gap: 50px;
+    column-gap: 40px;
+    /* grid-template-columns: 1fr 2fr; */
+    justify-content: center;
+    /* margin-left: 108px; */
+    margin-top: 50px;
+}
+
+/* .title-sambutan {
+    margin-left: 108px;
+} */
+
+/* .content-sambutan {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} */
+
+/* .content-sambutan p {
+    margin-left: 40px;
+} */
+
+.sambutan h3 {
+    grid-area: sambutan;
+}
+
+/* .sambutan h4 {
+    margin-top: 50px;
+    margin-left: 232px;
+} */
+
+.sambutan img {
+    width: 193px;
+    height: 193px;
+    grid-area: img;
+    /* justify-self: center; */
+}
+
+.sambutan p {
+    grid-area: content;
+    width: 70vw;
+    /* justify-self: center; */
+    text-align: justify;
+}
+
+.sambutan h4 {
+    grid-area: headmaster;
+}
+
+.title h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+/* End Sambutan */
+
+
+
+/* About School */
+.bg-about-schl, .gradient {
+    position: absolute;
+    width: 100% !important;
+    height: 100vh;
+    margin: 0 !important;
+}
+
+/* .bg-about-schl {
+    z-index: -2;
+} */
+
+.gradient {
+    /* z-index: -1; */
+    background: linear-gradient(282.62deg, rgba(132, 178, 113, 0.8) 51.25%, rgba(132, 178, 113, 0) 99.4%);
+}
+
+.about-schl {
+    display: grid;
+    align-items: center;
+    margin-top: 50px;
+    height: 100vh;
+}
+
+.about-schl-content {
+    display: grid;
+    grid-template-areas: "title-about-schl title-about-schl"
+    "img content";
+    row-gap: 35px;
+    column-gap: 35px;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: Roboto;
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: 1fr 2fr 1fr; */
+    /* margin-top: 67px; */
+    z-index: 1;
+}
+
+.about-schl h3 {
+    grid-area: title-about-schl;
+}
+
+.about-schl .about-schl-content img {
+    grid-area: img;
+    width: 431px;
+    height: 203px;
+    margin-left: -53px;
+}
+
+.about-schl-content p {
+    grid-area: content;
+    display: block;
+    width: 57vw;
+    text-align: justify;
+    max-height: 1000px;
+}
+/* End About School */
+
+
+
+/* Gallery */
+.gallery {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    row-gap: 35px;
+    margin-top: 121px;
+}
+
+.gallery h3 {
+    margin-left: 100px;
+    padding: 1px;
+    font-family: Roboto;
+    font-size: 24px;
+}
+
+.container-gallery {
+    display: grid;
+    grid-template-areas: "img1 img2 img3"
+    "img1 img4 img5"
+    "img6 img7 img8"
+    "img6 img9 img10";
+    justify-content: center;
+    column-gap: 1px;
+    row-gap: 1px;
+    width: 1136px;
+    height: 812px;
+}
+
+.img-1, .img-6 {
+    height: 406px;
+    width: 568px;
+}
+
+.img-2, .img-3, .img-4, .img-5, .img-7, .img-8, .img-9, .img-10 {
+    height: 203px;
+    width: 284px;
+}
+
+.img-2, .img-5, .img-10 {
+    background: #2C5338;
+}
+
+.img-3, .img-4, .img-8, .img-9 {
+    background: #84B271;
+}
+
+.img-1 {
+    grid-area: img1;
+}
+
+.img-2 {
+    grid-area: img2;
+}
+
+.img-3 {
+    grid-area: img3;
+}
+
+.img-4 {
+    grid-area: img4;
+}
+
+.img-6 {
+    grid-area: img6;
+    background: #658956;
+}
+
+.img-7 {
+    grid-area: img7;
+}
+
+.img-8 {
+    grid-area: img8;
+}
+
+.img-9 {
+    grid-area: img9;
+}
+/* End Gallery */
+
+
+/* Extracurricullar */
+.extracurricullar {
+    /* display: grid;
+    justify-content: center; */
+    font-family: Roboto;
+    font-size: 24px;
+    margin-top: 110px;
+    font-weight: bold;
+}
+
+.extracurricullar h3 {
+    margin-left: 162px;
+}
+
+.container-extra {
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-areas: "extra-1 extra-2 extra-3"
+    "extra-4 extra-5 extra-6"
+    "extra-7 extra-8 extra-9"
+    "extra-10 extra-11 extra-12"
+    "extra-13 extra-14 extra-15"; */
+    margin-top: 55px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.container-extra a {
+    text-decoration: none;
+    color: black;
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 165px;
+}
+
+.container-extra a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.extra-1, .extra-6, .extra-7, .extra-12, .extra-13 {
+    height: 165px;
+    width: 284px;
+}
+
+
+.extra-2, .extra-3, .extra-4, .extra-5, .extra-8, .extra-9, .extra-10, .extra-11, .extra-14, .extra-15 {
+    height: 165px;
+    width: 426px;
+}
+
+.extra-1, .extra-5, .extra-7, .extra-11, .extra-13 {
+    background: #2C5338;
+}
+
+.extra-2, .extra-6, .extra-8, .extra-12, .extra-14 {
+    background: #658956;
+}
+
+.extra-3, .extra-4, .extra-9, .extra-10, .extra-15 {
+    background: #84B271;
+}
+
+.extra-1, .extra-2, .extra-3, .extra-4, .extra-5, .extra-6, .extra-7, .extra-8, .extra-9, .extra-10, .extra-11, .extra-12, .extra-13, .extra-14, .extra-15 {
+    display: flex;
+    align-items: center;
+}
+
+/* .extra-1 {
+    display: flex;
+    grid-area: extra-1;
+    align-items: center;
+}
+
+.extra-2 {
+    grid-area: extra-2;
+}
+
+.extra-3 {
+    grid-area: extra-3;
+}
+
+.extra-4 {
+    grid-area: extra-4;
+}
+
+.extra-5 {
+    grid-area: extra-5;
+}
+
+.extra-6 {
+    grid-area: extra-6;
+}
+
+.extra-7 {
+    grid-area: extra-7;
+}
+
+.extra-8 {
+    grid-area: extra-8;
+}
+
+.extra-9 {
+    grid-area: extra-9;
+}
+
+.extra-10 {
+    grid-area: extra-10;
+}
+
+.extra-11 {
+    grid-area: extra-11;
+}
+
+.extra-12 {
+    grid-area: extra-12;
+}
+
+.extra-13 {
+    grid-area: extra-13;
+}
+
+.extra-14 {
+    grid-area: extra-14;
+}
+
+.extra-15 {
+    grid-area: extra-15;
+} */
+/* End Extracurricullar */
+
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-areas: "logo address map"
+    "footer footer footer";
+    grid-template-rows: 3fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    height: 571px;
+    width: 100%;
+    margin-top: 128px;
+    background: linear-gradient(90deg, #2C5338 51.04%, rgba(44, 83, 56, 0) 100%);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 259px;
+    width: 212px;
+    grid-area: logo;
+}
+
+footer p {
+    font-family: Roboto;
+}
+
+footer .address {
+    width: 342px;
+    text-align: right;
+    font-size: 18px;
+    margin-right: 28px;
+    margin-left: 71px;
+    grid-area: address;
+}
+
+.footer {
+    /* margin-top: 90px; */
+    font-size: 14px;
+    text-align: center;
+    grid-area: footer;
+}
+/* End Footer */
+
+
+
+/* ============================================================= */
+
+
+
+/* Responsive */
+@media (max-width: 800px) {
+    /* Navbar */
+    /* nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        justify-content: flex-end;
+    } */
+
+    /* nav ul {
+        
+    } */
+
+    /* nav ul li {
+        display: none;
+    } */
+
+    /* .menu {
+        display: none;
+        flex-direction: column !important;
+        z-index: 1;
+        background-color: seagreen;
+    } */
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: seagreen;
+    }
+
+    .menu-btn {
+        /* position: relative; */
+        display: flex;
+        position: absolute;
+        margin-right: 15px;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        z-index: 2;
+        /* border: 3px solid #fff; */
+    }
+    .menu-btn__burger {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    /* End Navbar */
+
+
+
+    /* Header */
+    .logo {
+        width: 56px;
+        height: 72px;
+        margin-left: 10px;
+    }
+
+    .date-time {
+        margin-right: 10px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .logo-des {
+        margin-left: 72px;
+        font-size: 12px;
+    }
+    /* End Header */
+
+
+
+    /* Hero Image */
+    .hero-img {
+        height: 200px;
+    }
+    /* End Hero Image */
+
+
+
+    /* Sambutan */
+    .sambutan {
+        display: grid;
+        grid-template-areas: "sambutan"
+        "img"
+        "content"
+        "headmaster" !important;
+        column-gap: 40px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 50px;
+    }
+
+    .sambutan p {
+        width: 90% !important;
+    }
+    /* End Sambutan */
+
+
+
+    /* About School */
+    .bg-about-schl, .gradient {
+        height: 150vh !important;
+    }
+
+    .about-schl {
+        height: 150vh !important;
+    }
+
+    .about-schl-content {
+        display: grid;
+        grid-template-areas: "title-about-schl"
+        "img"
+        "content" !important;
+        row-gap: 35px;
+        justify-items: center;
+        /* align-items: center; */
+        font-family: Roboto;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 2fr 1fr; */
+        /* margin-top: 67px; */
+    }
+
+    .about-schl .about-schl-content img {
+        width: 431px;
+        height: 203px;
+        margin: 0;
+    }
+
+    .about-schl p {
+        width: 90% !important;
+    }
+    /* End About School */
+
+
+
+    /* Gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 121px;
+    }
+
+    .container-gallery {
+        display: grid;
+        grid-template-areas: "img1 img1"
+        "img2 img3"
+        "img4 img5"
+        "img6 img6"
+        "img7 img8"
+        "img9 img10";
+        column-gap: 1px;
+        row-gap: 1px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .img-1, .img-6 {
+        height: 300px;
+        width: 450px;
+    }
+    
+    .img-2, .img-3, .img-4, .img-5, .img-7, .img-8, .img-9, .img-10 {
+        height: 160px;
+        width: 225px;
+    }
+
+    .gallery h3 {
+        margin: 0;
+    }
+    /* End Gallery */
+
+
+    /* Extracurricullar */
+    .container-extra {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+    }
+
+    .extracurricullar h3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .extra-1, .extra-2, .extra-3, .extra-4, .extra-5, .extra-6, .extra-7, .extra-8, .extra-9, .extra-10, .extra-11, .extra-12, .extra-13, .extra-14, .extra-15 {
+        width: 90%;
+    }
+    /* End Extracurricullar */
+
+
+    /* Footer */
+    /* footer {
+        display: grid;
+        grid-template-areas: "logo"
+        "address"
+        "map"
+        "footer" !important;
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        height: max-content;
+        width: 100%;
+        margin-top: 128px;
+    }
+
+    .footer-content iframe {
+        width: 90%;
+        height: 250px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-areas: "logo"
+        "address"
+        "map"
+        "footer" !important;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        justify-items: center;
+        margin-top: 25px;
+    }
+
+    .footer-content .address {
+        text-align: center;
+        width: 90%;
+        margin: 0;
+    }
+
+    .footer {
+        padding-bottom: 25px;
+    } */
+    /* End Footer */
+}
+
+@media (max-width: 1200px) {
+    /* Navbar */
+    nav {
+        height: 66px;
+        justify-content: flex-end;
+    }
+
+    /* .menu {
+        display: none;
+    } */
+
+    .menu-btn {
+        /* position: relative; */
+        display: flex;
+        margin-right: 15px;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        /* border: 3px solid #fff; */
+    }
+    .menu-btn__burger {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+    /* ANIMATION */
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    /* End Navbar */
+
+
+
+    /* Sambutan */
+    .sambutan {
+        display: grid;
+        grid-template-areas: "sambutan sambutan"
+        "img content"
+        "img headmaster";
+        row-gap: 50px;
+        column-gap: 40px;
+        /* grid-template-columns: 1fr; */
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .sambutan img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sambutan p {
+        width: 70vw;
+    }
+    /* End Sambutan */
+
+
+
+    /* About School */
+    .bg-about-schl, .gradient {
+        height: 120vh;
+    }
+
+    .about-schl {
+        height: 120vh;
+    }
+
+    .about-schl-content {
+        display: grid;
+        grid-template-areas: "title-about-schl"
+        "img"
+        "content";
+        row-gap: 35px;
+        justify-items: center;
+        /* align-items: center; */
+        font-family: Roboto;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 2fr 1fr; */
+        margin-top: 67px;
+    }
+
+    .about-schl .about-schl-content img {
+        width: 431px;
+        height: 203px;
+        margin: 0;
+    }
+
+    .about-schl p {
+        width: 90%;
+    }
+    /* End About School */
+
+
+    /* Gallery */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 121px;
+    }
+
+    .container-gallery {
+        display: grid;
+        grid-template-areas: "img1 img1"
+        "img2 img3"
+        "img4 img5"
+        "img6 img6"
+        "img7 img8"
+        "img9 img10";
+        column-gap: 1px;
+        row-gap: 1px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .gallery h3 {
+        margin: 0;
+    }
+    /* End Gallery */
+
+
+    /* Extracurricullar */
+    .container-extra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        row-gap: 5px;
+    }
+
+    .extracurricullar h3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .extra-1, .extra-2, .extra-3, .extra-4, .extra-5, .extra-6, .extra-7, .extra-8, .extra-9, .extra-10, .extra-11, .extra-12, .extra-13, .extra-14, .extra-15 {
+        width: 90%;
+    }
+    /* End Extracurricullar */
+
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-areas: "logo"
+        "address"
+        "map"
+        "footer";
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        height: max-content;
+        width: 100%;
+        margin-top: 128px;
+    }
+
+    .footer-content iframe {
+        width: 90%;
+        height: 250px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-areas: "logo"
+        "address"
+        "map"
+        "footer";
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        justify-items: center;
+        margin-top: 25px;
+    }
+
+    .footer-content .address {
+        text-align: center;
+        width: 90%;
+        margin: 0;
+    }
+
+    .footer {
+        padding-bottom: 25px;
+    }
+    /* End Footer */
+}
+/* End Responsive */
