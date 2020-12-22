@@ -160,6 +160,14 @@ header {
 /* End History-Vision Mission */
 
 
+/* Organizational Structure */
+.struc-org {
+    font-family: Roboto;
+    margin: 30px auto auto 66px;
+}
+/* End Organizational Structure */
+
+
 /* Footer */
 footer {
     display: grid;
