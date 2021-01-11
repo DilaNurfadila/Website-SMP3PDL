@@ -27,6 +27,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black !important;
+    padding: 5px;
 }
 
 nav ul li {
@@ -39,9 +40,9 @@ nav ul li:hover {
     background-color: green;
 }
 
-/* .active {
+.active {
     background-color: green;
-} */
+}
 
 /* Menu Hamburger */
 
@@ -256,33 +257,50 @@ footer .address {
         background-color: seagreen;
     } */
 
+    nav ul {
+        display: none;
+    }
+    
+    nav ul.show, .menu-btn, .menu-btn__burger {
+        position: fixed;
+    }
+    
     nav ul.show {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: seagreen;
+        height: 100vh;
+        padding-top: 80px;
+        margin: 0;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 5;
+        /* background: linear-gradient(to top, #2C5338 80%, #ffffff 100%); */
+        background: linear-gradient(to bottom, #84B271 0%, #ffffff 100%);
+        text-align: center;
     }
 
     .menu-btn {
         /* position: relative; */
         display: flex;
-        position: absolute;
+        /* position: absolute; */
         margin-right: 15px;
         align-items: center;
         justify-content: flex-end;
-        width: 30px;
-        height: 30px;
+        width: 40px !important;
+        height: 40px !important;
         cursor: pointer;
         transition: all .3s ease-in-out;
-        z-index: 2;
+        z-index: 6;
+        background-color: seagreen;
         /* border: 3px solid #fff; */
     }
     .menu-btn__burger {
+        position: absolute;
         display: block;
         width: 30px;
         height: 4px;
+        right: 5px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -354,25 +372,50 @@ footer .address {
         justify-content: flex-end;
     }
 
-    /* .menu {
+    nav ul {
         display: none;
-    } */
+    }
 
+    nav ul.show, .menu-btn, .menu-btn__burger {
+        position: fixed;
+    }
+    
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+        margin: 0;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 5;
+        /* background: linear-gradient(to top, #2C5338 80%, #ffffff 100%); */
+        background: linear-gradient(to bottom, #84B271 0%, #ffffff 100%);
+        text-align: center;
+    }
+    
     .menu-btn {
         /* position: relative; */
         display: flex;
+        /* position: absolute; */
         margin-right: 15px;
         align-items: center;
-        width: 30px;
-        height: 30px;
+        justify-content: flex-end;
+        width: 40px !important;
+        height: 40px !important;
         cursor: pointer;
         transition: all .3s ease-in-out;
+        z-index: 6;
+        background-color: seagreen;
         /* border: 3px solid #fff; */
     }
     .menu-btn__burger {
+        position: absolute;
         display: block;
         width: 30px;
         height: 4px;
+        right: 5px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255,101,47,.2);
