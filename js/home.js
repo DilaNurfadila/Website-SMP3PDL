@@ -1,13 +1,8 @@
 const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
+const navMenu = document.querySelector('ul');
 menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
+    menuBtn.classList.toggle('open');
+    navMenu.classList.toggle('show');
 });
 
 function datetime() {
