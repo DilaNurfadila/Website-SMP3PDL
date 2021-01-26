@@ -7,8 +7,9 @@
 4. Laravel
 
 ##### Tools :
-1. Postman
-2. FileZilla
+1. Visual Studio Code / other code editors
+2. Web Browser / other web browsers
+3. Terminal / command prompt
 
 ##### Team Project :
 1. Nurfadila
